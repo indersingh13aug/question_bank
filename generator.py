@@ -57,6 +57,6 @@ def generate_mcq(file, complexity):
 
     if response.status_code == 200:
         result = response.json()
-        return result[0]['generated_text'].strip()
+        return result[0]['generated_text'].strip().split('Assistant:')[1]
     else:
         return f"Error: {response.status_code} - {response.text}"
