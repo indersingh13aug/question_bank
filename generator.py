@@ -7,6 +7,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+# HUGGINGFACEHUB_ACCESS_TOKEN='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'
+# GEMINI_API_KEY='AIzaSyDd-JR1M20_vGgCtf0LYCEy1p5YFsDy1ts'
 ACCESS_TOKEN = os.getenv("GEMINI_API_KEY")
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={ACCESS_TOKEN}"
 
