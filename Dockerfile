@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 7860
 
 # Run the interface
-CMD ["python", "myapp/ui/interface.py"]
+CMD ["python", "interface.py"]
