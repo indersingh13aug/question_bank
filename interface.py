@@ -28,4 +28,4 @@ with gr.Blocks() as iface:
     summarize_btn.click(run_summary, inputs=[file_input, content_type], outputs=summary_output)
 
 if __name__ == "__main__":
-    iface.launch(server_name="0.0.0.0", server_port=7860)
+    iface.launch()#server_name="0.0.0.0", server_port=7860)
