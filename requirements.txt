@@ -1,0 +1,10 @@
+# Gradio UI
+gradio
+
+# File parsing
+python-docx
+PyPDF2
+
+
+# LLM
+python-dotenv
