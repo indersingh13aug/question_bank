@@ -1,6 +1,6 @@
 # app/ui/interface.py
 import gradio as gr
-from app.llm.generator import generate_mcq
+from myapp.llm.generator import generate_mcq
 iface = gr.Interface(
     fn=generate_mcq,
     inputs=[
