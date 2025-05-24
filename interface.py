@@ -1,15 +1,15 @@
 # app/ui/interface.py
 import gradio as gr
-from generator import generate_mcq, summarize_content
+from generator import generate_mcq, summarize_text
 
 def run_mcq(file, complexity, content_type):
     return generate_mcq(file, complexity, content_type)
 
 def run_summary(file, content_type):
-    return summarize_content(file, content_type)
+    return summarize_text(file, content_type)
 
 with gr.Blocks() as iface:
-    gr.Markdown("# 📚 MCQ and Summary Generator")
+    gr.Markdown("MCQ and Summary Generator")
     gr.Markdown("Upload a file, choose the complexity, mention content type, and generate MCQs or a short summary.")
 
     with gr.Row():
